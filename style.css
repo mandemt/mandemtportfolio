@@ -1,52 +1,72 @@
 body	{
-	font-family:Arial;
+	font-family: 'Dosis', sans-serif;
 	width:100%;
 	display:flex;
 	flex-direction:column;
-
+	background-color:#C3FDE7;
 	margin:0; padding:0;
 	line-height:1.5em;
 }
 nav{
 
 	display:flex;
+	justify-content:center;
 	width:100%;
 	background-color:#262861;
 
 
+}
+h1{
+	/*font-size:5em;*/
+	text-align:center;
+	padding:1em;
+	color:white;
 
+
+}
+h1,h2{
+	margin:0;
+	font-family:Courier New;
+	text-align:center;
 }
 
 
-
 article{
+	
 	display:grid;
-	grid-template-columns:13em auto;
+	grid-template-columns:23em auto;
 	grid-column-gap:1em;
-	grid-template-rows:3em 10em;
-	/*background-color:blue;*/
+	grid-template-rows:3em 20em;
+
 	margin: 4em auto;
-	width:50%;
+	width:70%;
 	border-bottom:1px solid black;
-	box-shadow: 0 4px 6px -6px black;
+	box-shadow: 4px 6px -6px black;
+	padding-top:1em;
 }
 article h2, p{
 	text-align:left;
 	grid-column:2;
 	/*background-color: yellow;*/
+
+}
+article p{
+	font-size:1.5em;
+	letter-spacing:.03em;
+	line-height:1.3;
 }
 
-
 article img{
-	height:10em;
+	height:20em;
 	margin: auto;
 	grid-column:1;
 	grid-row:1,2;
 	width:auto;
+	object-fit: cover;
 	/*background-color:green;*/
 
 }
-.button{
+/*.button{
 
 	text-align:center;
 
@@ -62,21 +82,10 @@ article img{
 	border-radius:.5em;
 	background-color:#149E7F;
 }
+*/
 
 
 
-h1{
-	/*font-size:5em;*/
-	text-align:center;
-
-	color:white;
-
-
-}
-h1,h2{
-	margin:0;
-	font-family:Courier New;
-}
 
 a{
 	text-decoration:none;
@@ -102,12 +111,13 @@ aside ul{
 #iteratie{
 	margin:0 auto;
 	width:70%;
+	
 
 }
 
 ol{
 
-	margin-top:5em;
+	margin-top:35em;
 	position:fixed;
 	display:flex;
 	flex-direction:column;
@@ -127,6 +137,57 @@ ol button{
 
 ol button:focus{
 	background-color:yellow;
+}
+
+
+
+.inhoud{
+	margin:0 auto;
+	display:flex;
+	list-style-type:none;
+	width:80%;
+	justify-content:space-evenly;
+	margin-bottom:5em;
+}
+
+.inhoud li{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	width:20em;
+	height:20em;
+
+	box-shadow: 1px 1px 5px black;
+}
+.inhoud h2{
+	padding-top:1em;
+	margin-bottom:auto;
+
+}
+.inhoud img{
+	margin:0 auto;
+	width:10em;
+}
+.inhoud a{
+	margin-top:2em;
+	height:3em;
+	border-top:1px solid black;
+	text-align:center;
+	line-height:3;
+
+	background-color:#262861;
+	color:white;
+}
+.inhoud a:hover{
+	background-color:black;
+}
+footer{
+	width:100%;
+	color:white;
+	position:fixed;
+	bottom:0;
+	text-align:center;
+	background-color:#262861;
 }
 
 @media(max-width:600px){

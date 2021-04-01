@@ -32,29 +32,23 @@ h1,h2{
 
 
 article{
-	
-	display:grid;
-	grid-template-columns:23em auto;
-	grid-column-gap:1em;
-	grid-template-rows:3em auto;
-	min-height:23em;
-	font-size:auto;
-	margin: 4em auto;
-	width:70%;
-	border-bottom:1px solid black;
-	box-shadow: 4px 6px -6px black;
-	padding-top:1em;
+
+	margin:3em auto ;
+	width:80%;
+	display:flex;
+	/*flex-direction:column;*/
 }
-article h2, p{
+
+article h2{
 	padding:0; margin:0;
 	text-align:left;
-	grid-column:2;
+
 	/*background-color: yellow;*/
 
 }
 article p{
 	font-size:1.3vw;
-	grid-row:2;
+
 	letter-spacing:.03em;
 	line-height:1.3;
 	
@@ -65,10 +59,13 @@ article p:first-of-type{
 article p:nth-of-type(2){
 	grid-row:3;
 }
-
+article:nth-of-type(2){
+	display:flex;
+	flex-direction:column;
+}
 article img{
 	height:20em;
-	margin: auto;
+	margin-right:3em ;
 	grid-column:1;
 	grid-row:1,2;
 	width:auto;
@@ -83,24 +80,6 @@ article img{
 	padding-bottom:1em;
 
 }
-/*.button{
-
-	text-align:center;
-
-	width:5em;
-	text-decoration:none;	
-	color:black;
-	padding:1em;
-	font-size:2em;
-	position:fixed;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	border-radius:.5em;
-	background-color:#149E7F;
-}
-*/
-
 
 .banner{
 	margin:0 auto 2em;

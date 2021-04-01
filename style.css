@@ -36,8 +36,9 @@ article{
 	display:grid;
 	grid-template-columns:23em auto;
 	grid-column-gap:1em;
-	grid-template-rows:3em 20em;
-
+	grid-template-rows:3em auto;
+	min-height:23em;
+	font-size:auto;
 	margin: 4em auto;
 	width:70%;
 	border-bottom:1px solid black;
@@ -45,15 +46,24 @@ article{
 	padding-top:1em;
 }
 article h2, p{
+	padding:0; margin:0;
 	text-align:left;
 	grid-column:2;
 	/*background-color: yellow;*/
 
 }
 article p{
-	font-size:1.5em;
+	font-size:1.3vw;
+	grid-row:2;
 	letter-spacing:.03em;
 	line-height:1.3;
+	
+}
+article p:first-of-type{
+	grid-row:2;
+}
+article p:nth-of-type(2){
+	grid-row:3;
 }
 
 article img{
@@ -64,6 +74,13 @@ article img{
 	width:auto;
 	object-fit: cover;
 	/*background-color:green;*/
+
+}
+.itereer{
+	
+	display:flex;
+	flex-direction:column;
+	padding-bottom:1em;
 
 }
 /*.button{

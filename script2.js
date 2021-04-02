@@ -3,7 +3,7 @@ console.log('hoi')
 var knop1 = document.querySelector('aside button:first-of-type');
 var knop2 = document.querySelector('aside button:nth-of-type(2)');
 var knop3 = document.querySelector('aside button:nth-of-type(3)');
-var afbeelding = document.querySelector('#iteratie')
+var afbeelding = document.querySelector('#itereerimg')
 
 
 function iteratie1(){
